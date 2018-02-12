@@ -19,13 +19,23 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: false
-  default: ''
+  hidden: true
+  default: rubrique
 - name: description
   label: Description
   type: text
   hidden: false
   default: ''
+- type: select
+  config:
+    source:
+      type: simple
+    options:
+    - Politique
+    - Education
+    - Faits divers
+  label: Categories
+  name: categories
 - name: image
   label: Image
   type: file
