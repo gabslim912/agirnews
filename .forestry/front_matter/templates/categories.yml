@@ -1,4 +1,7 @@
 ---
+pages:
+- _categories/education.md
+- _categories/politique.md
 hide_body: false
 fields:
 - name: title
