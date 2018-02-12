@@ -1,5 +1,6 @@
 ---
 pages:
+- _categories/faits-divers.md
 - _categories/education.md
 - _categories/politique.md
 hide_body: false
