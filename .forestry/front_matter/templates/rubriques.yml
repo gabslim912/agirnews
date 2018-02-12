@@ -1,5 +1,6 @@
 ---
 pages:
+- _rubriques/divertissement.md
 - _rubriques/international.md
 - _rubriques/elections.md
 hide_body: false
