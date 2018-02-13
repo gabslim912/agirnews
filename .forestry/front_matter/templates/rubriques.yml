@@ -35,7 +35,7 @@ fields:
     options:
     - Politique
     - Education
-    - Faits divers
+    - Societe
   label: Categories
   name: categories
 - name: image
