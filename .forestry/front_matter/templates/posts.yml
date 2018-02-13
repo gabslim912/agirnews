@@ -30,9 +30,9 @@ fields:
       type: simple
     required: true
     options:
-    - Faits divers
     - Education
     - Politique
+    - Societe
   label: Categories
   default: Faits divers
 - type: select
@@ -69,3 +69,4 @@ fields:
     options:
     - Moussa Atchie
   label: Auteurs
+  default: Moussa Atchie
