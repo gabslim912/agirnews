@@ -7,6 +7,7 @@ date: 2018-02-12 00:00:00 +0000
 mini_desc: Pourquoi la France s’est retirée de la Nouvelle Alliance pour la sécurité
   alimentaire
 main_img: "/uploads/2018/02/13/111f523_3266-1fk3ucc.ihwv.jpg"
+auteurs: Moussa Atchie
 ---
 ## What is Lorem Ipsum?
 
