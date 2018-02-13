@@ -7,6 +7,7 @@ date: 2018-02-12 00:00:00 +0000
 mini_desc: 'La formation des enseignants au Sénégal : des écoles normales aux Centres
   Régionaux '
 main_img: "/uploads/2018/02/13/Uden.jpg"
+auteurs: Moussa Atchie
 ---
 > > _L’objectif de cet article est de faire un état des lieux de la formation des enseignants au Sénégal. Notre intérêt porte sur les différentes mutations des dispositifs de formation depuis les débuts du 19ème siècle._ 
 > >
