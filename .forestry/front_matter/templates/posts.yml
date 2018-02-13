@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/la-formation-des-enseignants-au-senegal.md
 hide_body: false
 fields:
 - name: title
