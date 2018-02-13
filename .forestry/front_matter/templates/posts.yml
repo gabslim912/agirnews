@@ -11,6 +11,11 @@ fields:
   type: datetime
   hidden: false
   default: ''
+- name: mini_desc
+  label: Mini desc
+  type: text
+  hidden: false
+  default: ''
 - type: select
   name: categories
   config:
@@ -23,21 +28,6 @@ fields:
     - Politique
   label: Categories
   default: Faits divers
-- name: main_img
-  label: Main img
-  type: file
-  hidden: false
-  default: ''
-- name: mini_desc
-  label: Mini desc
-  type: text
-  hidden: false
-  default: ''
-- name: layout
-  label: Layout
-  type: text
-  hidden: true
-  default: post
 - type: select
   name: rubriques
   config:
@@ -52,4 +42,14 @@ fields:
     - International
     - Elections
   label: Rubriques
+  default: Formation
+- name: main_img
+  label: Main img
+  type: file
+  hidden: false
   default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: post
