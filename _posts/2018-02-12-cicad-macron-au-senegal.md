@@ -6,6 +6,7 @@ layout: post
 date: 2018-02-12 00:00:00 +0000
 mini_desc: 'CICAD – Macron au Sénégal : YOUSSOU NDOUR ravit la vedette à Macky SALL'
 main_img: "/uploads/2018/02/13/YOUSSOU-NDOUR-ravit-la-vedette-à-Macky-SALL.jpg"
+auteurs: Moussa Atchie
 ---
 ## What is Lorem Ipsum?
 
