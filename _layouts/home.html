@@ -11,14 +11,14 @@ layout: default
                     <div class="col-sm-12 col-md-9">
                         <div class="blog-list-single padd-right-30">
                             <div class="row">
-                           {% for post in site.posts limit: 4 %}
+                           {% for post in site.posts limit: 2 %}
                             {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
                             
                             <!-- blog-item Post -->
                             <div class="blog-item">
                                 <div class="blog-post">
                                     <div class="blogpost-img">
-                                        <a href="{{ post.url }}" target="blank"><img src="{{ post.main_img }}" alt="{{ post.title }}"></a>
+                                        <a href="{{ post.url }}" target="blank"><img src="{{ post.main_img }}" alt="{{ post.title }}" width="877px" height="535px"></a>
                                     </div>
                                     <div class="post-share">
                                         <div class="social-share">
@@ -71,7 +71,7 @@ layout: default
             <div class="slide-insta">
             {% for rubrique in site.rubriques %}
                 <div class="insta-item">
-                    <a href="{{ rubrique.url }}"><img src="{{ rubrique.image }}" alt="image" /><span>{{ rubrique.title }}</span></a>
+                    <a href="{{ rubrique.url }}"><img src="{{ rubrique.image }}" alt="image" width="214px" height="202px" /><span>{{ rubrique.title }}</span></a>
                 </div>
             {% endfor %}
             </div>
