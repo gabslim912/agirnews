@@ -1,6 +1,6 @@
 ---
 title: 'Procès Khalifa Sall '
-categories: Faits divers
+categories: Societe
 rubriques: Actualites
 layout: post
 date: 2018-02-12 00:00:00 +0000
