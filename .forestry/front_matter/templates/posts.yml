@@ -60,3 +60,10 @@ fields:
   type: text
   hidden: true
   default: post
+- type: select
+  name: auteurs
+  config:
+    source:
+      type: simple
+    required: true
+  label: Auteurs
