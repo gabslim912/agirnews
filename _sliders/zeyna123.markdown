@@ -1,6 +1,6 @@
 ---
 title: zeyna123
-date: 2018-01-01 19:19:00 Z
+date: 2018-01-01 19:19:00 +0000
 image: "/uploads/26540362_1771179206239027_199245364_o.jpg"
 categories: Societe
 rubriques: Tradition
