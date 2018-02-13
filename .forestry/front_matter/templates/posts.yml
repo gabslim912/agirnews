@@ -1,0 +1,55 @@
+---
+hide_body: false
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: ''
+- type: select
+  name: categories
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Faits divers
+    - Education
+    - Politique
+  label: Categories
+  default: Faits divers
+- name: main_img
+  label: Main img
+  type: file
+  hidden: false
+  default: ''
+- name: mini_desc
+  label: Mini desc
+  type: text
+  hidden: false
+  default: ''
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: post
+- type: select
+  name: rubriques
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Formation
+    - Reseaux sociaux
+    - Actualites
+    - Divertissement
+    - International
+    - Elections
+  label: Rubriques
+  default: ''
