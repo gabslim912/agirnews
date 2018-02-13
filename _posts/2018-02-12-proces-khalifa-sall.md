@@ -7,6 +7,7 @@ date: 2018-02-12 00:00:00 +0000
 mini_desc: 'Procès Khalifa Sall : 220 millions FCFA justifiés, 1 milliard 580 millions
   de FCFA à justifier !'
 main_img: "/uploads/2018/02/13/khalifa_sall_maire_dakar-770x470-696x425.jpg"
+auteurs: Moussa Atchie
 ---
 ## Les avocats de la défense viennent de déposer des justificatifs sur la table du juge Malick Lamotte. Ces preuves relèvent de l’installation d’équipements solaires faites par la ville de Dakar à hauteur de 220 millions de nos francs.
 
