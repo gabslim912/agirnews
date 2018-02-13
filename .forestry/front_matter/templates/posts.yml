@@ -66,4 +66,6 @@ fields:
     source:
       type: simple
     required: true
+    options:
+    - Moussa Atchie
   label: Auteurs
