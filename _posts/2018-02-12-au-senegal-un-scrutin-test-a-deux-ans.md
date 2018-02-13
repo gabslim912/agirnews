@@ -6,6 +6,7 @@ layout: post
 date: 2018-02-12 00:00:00 +0000
 mini_desc: Au Sénégal, un scrutin test à deux ans de l’élection présidentielle
 main_img: "/uploads/2018/02/13/politique election.jpg"
+auteurs: Moussa Atchie
 ---
 ## What is Lorem Ipsum?
 
