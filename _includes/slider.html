@@ -1,0 +1,19 @@
+
+ <!--blog-carousel  -->
+        <section class="blog-carousel">
+            <div class="">
+                <div class="postitem-row2">
+                {% for post in site.posts limit: 8 %}
+                    <div class="post-item" style="background-image:url({{ post.main_img }})">
+                        <a href="{{ post.url }}" class="overtlink"></a>
+                        <div class="overlay-box">
+                            <span class="cat"><a href="#">{{ post.categories }}</a></span>
+                            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                            <span class="pi-time"><i class="fa fa-clock-o"></i>{{ post.date }}</span>
+                        </div>
+                    </div>
+                 {% endfor %}  
+                </div>
+            </div>
+        </section>
+        <!--blog-carousel end  -->

@@ -1,0 +1,188 @@
+<!-- Preloader -->
+      
+
+        
+        
+        <!-- Main Header -->
+        <header class="site-header header-second">
+            <div class="topborder"></div>
+            <div class="header-main darkhead">
+                <div class="container">
+                    <div class="nav-outer clearfix">
+
+       
+
+                        <!--social-links-->
+                        <ul class="social-links">
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class=""><a href="/">Acceuil </a>
+                                    </li>
+                                    
+                                    <li class="dropdown"><a href="#">Societe</a>
+                                        <ul>
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Societe'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                        
+                                    </li>
+                                    <li class="dropdown"><a href="#">Soins & Beaute</a>
+                                        <ul>
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Soins & Beaute'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                        
+                                    </li>
+                                    <li class="dropdown"><a href="#">Actualites</a>
+                                        <ul>
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Actualites'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                        
+                                    </li>
+                                    
+                                    <li><a href="/about">A propos</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+
+                        <!--Searchbox-->
+                        <div class="srchbox1">
+                            <ul class="menusearch">
+                                <li>
+                                    <div class="bz_search_bar " >
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    <div  class="bz_search_box">
+                                        <input placeholder="Search here" type="text">
+                                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--Header-Main end-->
+            <!--Logo-Header-->
+            <div class="logoheader logo-top">
+                <div class="logo">
+                    <a href="/"><img src="/images/logoagir.png"  alt="image" /></a>
+                </div>
+            </div>
+            <!--Logo-Header end-->
+
+            <!--Sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container clearfix">
+                    <!--Logo-->
+                    <div class="logo pull-left">
+                        <a href="/" class="img-responsive"><img src="/images/logoagir-small.png" alt="Logo" title="Logo"></a>
+                    </div>
+
+                    <!--Right Col-->
+                    <div class="right-col pull-right">
+                        <!-- Main Menu -->
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <!-- Toggle Button -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+                                    <li class=""><a href="/">Acceuil </a>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Societe</a>
+                                        <ul>
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Societe'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                        
+                                    </li>
+                                    <li class="dropdown"><a href="#">Soins & Beaute</a>
+                                        <ul>
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Soins & Beaute'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                        
+                                    </li>
+                                    <li class="dropdown"><a href="#">Actualites</a>
+                                        <ul>
+                                            {% assign rubriques = site.rubriques | where:"categories", 'Actualites'  %}
+                                            {% for rubrique in rubriques %}
+                                            <li><a href="{{ rubrique.url }}">{{ rubrique.title }}</a></li>
+                                            {% endfor %}
+                                        </ul>
+                                        
+                                    </li>
+                                    <li><a href="/about">A propos</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <!-- Main Menu End-->
+
+                        <!--Searchbox-->
+                        <div class="srchbox1">
+                            <ul class="menusearch">
+                                <li>
+                                    <div class="bz_search_bar " >
+                                        <i class="fa fa-search" aria-hidden="true"></i>
+                                    </div>
+                                    <div  class="bz_search_box">
+                                        <input placeholder="Search here" type="text">
+                                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--social-links-->
+                        <ul class="social-links">
+                            <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--End Sticky Header-->
+
+        </header>
+        <!-- Main Header end -->
