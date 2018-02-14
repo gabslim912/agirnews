@@ -38,7 +38,7 @@
                                 <div class="blog-post row">
                                     <div class="col-sm-5">
                                         <div class="blogpost-img">
-                                            <a href="{{ post.url }}"><img src="{{ post.main_img }}" alt="Post"></a>
+                                            <a href="{{ post.url }}"><img src="{{ post.main_img }}" alt="Post" width="323px" height="197px"></a>
                                         </div>
                                     </div>
                                     <div class="col-sm-7">
@@ -91,16 +91,18 @@
         <!--page contents end  -->
 
         <!--insta-full-gallery  -->
+        <!--insta-full-gallery  -->
         <section class="insta-full-gallery clearfix">
             <h2 class="instahd"><span>Rubriques</span></h2>
             <div class="slide-insta">
             {% for rubrique in site.rubriques %}
                 <div class="insta-item">
-                    <a href="#"><img src="{{ rubrique.image }}" alt="image" /><span>{{ rubrique.title }}</span></a>
+                    <a href="{{ rubrique.url }}"><img src="{{ rubrique.image }}" alt="image" width="214px" height="202px" /><span>{{ rubrique.title }}</span></a>
                 </div>
             {% endfor %}
             </div>
         </section>
+        <!--insta-full-gallery end  -->
         <!--insta-full-gallery end  -->
 
         <!--footer  -->
