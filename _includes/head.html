@@ -1,6 +1,16 @@
 <head>
-    <meta charset="utf-8">
-    <title>AGIR - L'INFORMATION PAR EXELLENCE</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{% if page.title != undefined %}{{ page.description | escape }}{% else %}{{ site.description | escape }}{% endif %}">
+    <link rel="canonical" href="{{ site.production_url }}{{ page.url | replace:'index.html',''}}">
+    {% if page.description %}
+        <meta name="description" content="{{ page.description | escape }}">
+    {% else %}
+          <meta name="description" content="{{ site.description | escape }}">
+    {% endif %}
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="{{ site.favicon }}">
     <!-- Stylesheets -->
     <!-- bootstrap v3.3.6 css -->
     <link href="/css/bootstrap.css" rel="stylesheet">
@@ -31,4 +41,9 @@
     <link href="/css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <meta property="og:url"           content="{{ page.url }}" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="{{ page.title }}" />
+    <meta property="og:description"   content="{{ page.mini_desc }}" />
+    <meta property="og:image"         content="{{ page.main_img }}" />
 </head>
