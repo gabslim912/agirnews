@@ -47,7 +47,7 @@
                                             <h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
                                             <div class="post-meta">
                                                 <span><a href="#"><i class="fa fa-user"></i> By {{ post.auteurs }}</a></span>
-                                                <span><a href="#"><i class="fa fa-clock-o"></i> {{ post.date }}</a></span>
+                                                <span><a href="#"><i class="fa fa-clock-o"></i> {{ post.date | date: "%d-%m-%y" }}</a></span>
                                             </div>
                                             <p>{{ post.mini_desc }} </p>
                                             <div class="read-more">

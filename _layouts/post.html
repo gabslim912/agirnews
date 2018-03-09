@@ -22,29 +22,29 @@ layout: default
         <section class="contents">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col-md-12">
-                        <div class="post-detail  padd-right-30">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="post-detail" style="padding-top: 0px; margin-top: 0px;">
+                            <div class="postdtl-info" style="padding-top: 0px; margin-top: 0px;">
+                                <p class="post-category"><a href="#">{{ page.categories }}</a></p>
+                                <h1 class="post-title"><a href="#">{{ page.title }}</a></h3>
+                                <div class="post-meta">
+                                    <span><a href="#"><i class="fa fa-user"></i> By {{ page.auteurs }}</a></span>
+                                    <span><a href="#"><i class="fa fa-clock-o"></i> {{ page.date | date: "%d-%m-%y" }}</a></span>
+                                </div>
+                                
+
+                            </div>
                             <div class="postdetail-img">
                                 <a href="#"><img src="{{ page.main_img }}" alt="Post" width="1110px" height="600px"></a>
                             </div>
                             <div class="post-share">
-                                <div class="fb-share-button" 
-                                        data-href="{{ page.url }}" 
-                                        data-layout="button_count">
-                                </div>
+                                 {% include facebook_share.html %}
                                 <div class="coment-share">
                                     <a href="#"><i class="fa fa-comment"></i> 3</a>
                                 </div>
                             </div>
                             <div class="postdtl-info">
-                                <p class="post-category"><a href="#">{{ page.categories }}</a></p>
-                                <h3 class="post-title"><a href="#">{{ page.title }}</a></h3>
-                                <div class="post-meta">
-                                    <span><a href="#"><i class="fa fa-user"></i> By {{ page.auteurs }}</a></span>
-                                    <span><a href="#"><i class="fa fa-clock-o"></i> {{ page.date | date: date_format }}</a></span>
-                                </div>
                                 <p>{{ content }}</p>
-
                             </div>
                             <div class="comment-box">
                                 <div class="title">
@@ -59,7 +59,7 @@ layout: default
                                     <div class="content-box">
                                         <h3> {{ page.auteurs }}</h3>
                                         <div class="meta-box clearfix">
-                                            <span class="pull-left">{{ page.date | date: date_format }}</span>
+                                            <span class="pull-left">{{ page.date | date: "%d-%m-%y" }}
                                             
                                         </div>
                                        
@@ -79,11 +79,7 @@ layout: default
                                             <a href="#"><img src="{{ post.main_img }}" alt="Post" width="350px" height="213px"></a>
                                         </div>
                                         <div class="post-share">
-                                            <div class="social-share">
-                                                <span class="title-share">Share:</span>
-                                                <a href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                                            </div>
+                                            
                                             <div class="coment-share">
                                                 <a href="#"><i class="fa fa-comment"></i> 3</a>
                                             </div>
@@ -93,7 +89,7 @@ layout: default
                                             <h3 class="post-title"><a href="#">{{ post.title }}</a></h3>
                                             <div class="post-meta">
                                                 <span><a href="#"><i class="fa fa-user"></i> {{ post.auteurs }}</a></span>
-                                                <span><a href="#"><i class="fa fa-clock-o"></i>{{ post.date }}</a></span>
+                                                <span><a href="#"><i class="fa fa-clock-o"></i>{{ post.date | date: "%d-%m-%y" }}</a></span>
                                             </div>
                                         </div>
                                     </div>
@@ -110,23 +106,12 @@ layout: default
                                 <div class="title">
                                     <h2>Laisser un commentaire</h2>
                                 </div>
-                                <form action="#" class="contact-form row" id="contact-page-contact-form" novalidate="novalidate">
-                                    <div class="col-md-6">
-                                        <input name="name" placeholder="Name" type="text">
-                                        <input name="email" placeholder="Email" type="text">
-                                        <input name="phone" placeholder="Phone" type="text">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
-                                    </div>
-                                    <div class="col-md-12 text-center">
-                                        <button class="btn-two" type="submit">Poster</button>
-                                    </div>
-                                </form>
+                                <div class="fb-comments" data-href="{{ page.url }}"  data-width="720" data-numposts="5"></div>
                             </div>
 
                         </div>
                     </div>
+                    {% include home_sidebar.html %}
 
                 </div>
             </div>
